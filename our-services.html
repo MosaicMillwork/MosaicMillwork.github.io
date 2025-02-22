@@ -12,7 +12,9 @@
   <link rel="stylesheet" href="styles/reset.css" />
   <link rel="stylesheet" href="styles/style.css" />
   <link rel="stylesheet" href="styles/our-services.css">
-  <title>Mosaic Millwork</title>
+  <title>Services | Mosaic Millwork</title>
+  <link rel="icon" type="image/x-icon" href="/assets/branding/icon.png">
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
     integrity="sha512-JobWAqYk5CSjWuVV3mxgS+MmccJqkrBaDhk8SKS1BW+71dJ9gzascwzW85UwGhxiSyR7Pxhu50k+Nl3+o5I49A=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -22,7 +24,45 @@
 
 <body>
   <div class="pg-wrapper">
-    <?php include_once 'components/header.php'; ?>
+   <header class="main-nav">
+     <div class="content">
+       <a href="index.html">
+         <img src="assets/branding/mosaic-logo.svg" alt="Mosaic Millwork Logo" width="50" />
+       </a>
+       <nav class="desktop-nav">
+         <ul>
+           <li class="flex center-all container-outline vert-pad-8 side-pad-16">
+             <a href="about-us.html" title="About Us">About Us</a>
+           </li>
+           <li class="flex center-all container-outline vert-pad-8 side-pad-16">
+             <a href="our-services.html">Our Services</a>
+           </li>
+           <li class="flex center-all container-outline vert-pad-8 side-pad-16">
+             <a id="highlight-footer-btn" href="#contact-info">Contact Us</a>
+           </li>
+           <li class="flex center-all container-outline vert-pad-8 side-pad-16">
+             <a href="our-work.html">Our Work</a>
+           </li>
+         </ul>
+       </nav>
+       <div class="mobile-menu-toggle burger flex-col center-all">
+         <div class="line"></div>
+         <div class="line"></div>
+         <div class="line"></div>
+       </div>
+     </div>
+     <nav class="mobile-nav flex center-all">
+       <ul class="flex-col center-all">
+         <li><a href="index.html" title="Home">Home</a></li>
+         <li><a href="about-us.html" title="About Us">About Us</a></li>
+         <li><a href="our-services.html">Our Services</a></li>
+         <li id="contact-us">
+           <a id="highlight-footer-btn" href="#contact-info">Contact Us</a>
+         </li>
+         <li><a href="our-work.html">Our Work</a></li>
+       </ul>
+     </nav>
+   </header>
 
     <main>
       <section class="float-in">
@@ -32,7 +72,7 @@
             <h5 class="pad-32 container-outline center-all flex">WE OFFER A WIDE RANGE OF SERVICES</h5>
             <div class="service-card flex-col container-outline pad-24">
               <div class="img-container">
-                <img src="assets/portfolio/D-01-01.webp" alt="">
+                <img src="assets/portfolio/img12.webp" alt="">
               </div>
               <div class="text flex-col">
                 <h5>CABINETS</h5>
@@ -42,7 +82,7 @@
             </div>
             <div class="service-card flex-col container-outline pad-24">
               <div class="img-container">
-                <img src="assets/portfolio/Forest_01.webp" alt="">
+                <img src="assets/portfolio/img42.webp" alt="">
               </div>
               <div class="text flex-col">
                 <h5>ARCHITECTURAL MILLWORK</h5>
@@ -54,7 +94,7 @@
             </div>
             <div class="service-card flex-col container-outline pad-24">
               <div class="img-container">
-                <img src="assets/portfolio/P1000027.webp" alt="">
+                <img src="assets/portfolio/img61.webp" alt="">
               </div>
               <div class="text flex-col">
                 <h5>FURNITURE MAKING</h5>
@@ -64,7 +104,7 @@
             </div>
             <div class="service-card flex-col container-outline pad-24">
               <div class="img-container">
-                <img src="assets/portfolio/_STU6181_edit.webp" alt="">
+                <img src="assets/portfolio/img4.webp" alt="inside architecture of a museum">
               </div>
               <div class="text flex-col">
                 <h5>WOOD PANELING</h5>
@@ -74,7 +114,7 @@
             </div>
             <div class="service-card flex-col container-outline pad-24">
               <div class="img-container">
-                <img src="assets/portfolio/church-2.jpg" alt="">
+                <img src="assets/portfolio/img10.jpg" alt="church inside">
               </div>
               <div class="text flex-col">
                 <h5>CATHOLIC ARCHITECTURE</h5>
@@ -84,7 +124,7 @@
             </div>
             <div class="service-card flex-col container-outline pad-24">
               <div class="img-container">
-                <img src="assets/portfolio/mosaic_ARBOR_07.webp" alt="">
+                <img src="assets/portfolio/img55.webp" alt="entryway">
               </div>
               <div class="text flex-col">
                 <h5>RESTORATION SERVICES</h5>
@@ -98,7 +138,39 @@
         </div>
       </section>
     </main>
-    <?php include_once 'components/footer.php' ?>
+    <footer id="footer" class="footer vert-pad-64 side-pad-32">
+          <div class="footer-layout">
+            <div class="footer-column flex-col">
+              <img src="./assets/branding/mosaic-logo.svg" alt="Logo" class="footer-logo" />
+            </div>
+            <div class="footer-column vert-pad-16 container-outline">
+              <ul class="flex-col pad-32">
+                <li>
+                  <a href="index.html"> Home </a>
+                </li>
+                <li>
+                  <a href="about-us.html"> About Us </a>
+                </li>
+                <li>
+                  <a href="our-work.html"> Our Work </a>
+                </li>
+                <li>
+                  <a href="our-services.html"> Our Services </a>
+                </li>
+              </ul>
+            </div>
+            <div id="contact-info" class="footer-column contact-info vert-pad-16 container-outline">
+              <ul class="flex-col pad-32">
+                <li>
+                  <a id="email" href="mailto:manuel.mosaic@gmail.com">manuel.mosaic@gmail.com</a>
+                </li>
+                <li>
+                  <a id="number" href="tel:604-575-1556">(604) 575-1556</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </footer>
   </div>
   <script src="scripts/main.js" defer></script>
 </body>

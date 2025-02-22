@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="styles/style.css" />
   <link rel="stylesheet" href="styles/index.css" />
   <title>Mosaic Millwork</title>
+  <link rel="icon" type="image/x-icon" href="/assets/branding/icon.png">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
     integrity="sha512-JobWAqYk5CSjWuVV3mxgS+MmccJqkrBaDhk8SKS1BW+71dJ9gzascwzW85UwGhxiSyR7Pxhu50k+Nl3+o5I49A=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -22,7 +23,45 @@
 
 <body>
   <div class="pg-wrapper">
-    <?php include_once 'components/header.php'; ?>
+    <header class="main-nav">
+      <div class="content">
+        <a href="index.html">
+          <img src="assets/branding/mosaic-logo.svg" alt="Mosaic Millwork Logo" width="50" />
+        </a>
+        <nav class="desktop-nav">
+          <ul>
+            <li class="flex center-all container-outline vert-pad-8 side-pad-16">
+              <a href="about-us.html" title="About Us">About Us</a>
+            </li>
+            <li class="flex center-all container-outline vert-pad-8 side-pad-16">
+              <a href="our-services.html">Our Services</a>
+            </li>
+            <li class="flex center-all container-outline vert-pad-8 side-pad-16">
+              <a id="highlight-footer-btn" href="#contact-info">Contact Us</a>
+            </li>
+            <li class="flex center-all container-outline vert-pad-8 side-pad-16">
+              <a href="our-work.html">Our Work</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="mobile-menu-toggle burger flex-col center-all">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </div>
+      <nav class="mobile-nav flex center-all">
+        <ul class="flex-col center-all">
+          <li><a href="index.html" title="Home">Home</a></li>
+          <li><a href="about-us.html" title="About Us">About Us</a></li>
+          <li><a href="our-services.html">Our Services</a></li>
+          <li id="contact-us">
+            <a id="highlight-footer-btn" href="#contact-info">Contact Us</a>
+          </li>
+          <li><a href="our-work.html">Our Work</a></li>
+        </ul>
+      </nav>
+    </header>
 
     <main>
       <section class="float-in hero flex vert-pad-64">
@@ -60,7 +99,7 @@
                 CATHOLIC ARCHITECTURE
               </li>
               <li class="">
-                <a class="red-bg-white-text vert-pad-16 side-pad-8" href="our-services.php">EXPLORE MORE SERVICES</a>
+                <a class="red-bg-white-text vert-pad-16 side-pad-8" href="our-services.html">EXPLORE MORE SERVICES</a>
               </li>
             </ul>
           </div>
@@ -118,7 +157,7 @@
                 </p>
               </div>
             </div>
-            <a href="about-us.php" class="cta-primary">Learn More about us</a>
+            <a href="about-us.html" class="cta-primary">Learn More about us</a>
           </div>
         </div>
       </section>
@@ -129,67 +168,64 @@
           </div>
           <ul class="flex">
             <li class="project-card">
-              <img class src="assets/portfolio/_STU6181_edit.webp" alt="" />
+              <img class src="assets/portfolio/img42.webp" alt="" />
             </li>
             <li class="project-card">
-              <img class src="assets/portfolio/D-05-02.webp" alt="" />
+              <img class src="assets/portfolio/img61.webp" alt="" />
             </li>
             <li class="project-card">
-              <img class src="assets/portfolio/UBC Site 2.jpg" alt="" />
+              <img class src="assets/portfolio/img12.webp" alt="" />
             </li>
             <li class="project-card">
-              <img class src="assets/portfolio/P1000069.webp" alt="" />
+              <img class src="assets/portfolio/img4.webp" alt="" />
             </li>
             <li class="project-card">
-              <img class src="assets/portfolio/mosaic_ARBOR_07.webp" alt="" />
+              <img class src="assets/portfolio/img10.jpg" alt="" />
             </li>
             <li class="project-card">
-              <img class src="assets/portfolio/IMG_6746.webp" alt="" />
+              <img class src="assets/portfolio/img55.webp" alt="" />
             </li>
           </ul>
         </div>
         <div class="top-pad-32">
-        <a href="our-work.php" class="cta-primary">See Our Portfolio</a>
-        </div>
-      </section>
-      <section class="float-in testimonials title-line-break">
-        <h5>Reviews</h5>
-        <div class="reviews-grid">
-          <div class="review flex-col left-align">
-            <p>“OMG they are so hooot”</p>
-            <div class="profile flex">
-              <img src="./assets/Image.png" alt="" />
-              <div class="text flex-col center-col-vert">
-                <h6>John Doe</h6>
-                <p class="p-small">CEO, Doe Inc.</p>
-              </div>
-            </div>
-          </div>
-          <div class="review flex-col left-align">
-            <p>“OMG they are so hooot”</p>
-            <div class="profile flex">
-              <img src="./assets/Image.png" alt="" />
-              <div class="text flex-col center-col-vert">
-                <h6>John Doe</h6>
-                <p class="p-small">CEO, Doe Inc.</p>
-              </div>
-            </div>
-          </div>
-          <div class="review flex-col left-align">
-            <p>“OMG they are so hooot”</p>
-            <div class="profile flex">
-              <img src="./assets/Image.png" alt="" />
-              <div class="text flex-col center-col-vert">
-                <h6>John Doe</h6>
-                <p class="p-small">CEO, Doe Inc.</p>
-              </div>
-            </div>
-          </div>
+        <a href="our-work.html" class="cta-primary">See Our Portfolio</a>
         </div>
       </section>
     </main>
-    <?php include_once 'components/footer.php' ?>
-  </div>
+<footer id="footer" class="footer vert-pad-64 side-pad-32">
+      <div class="footer-layout">
+        <div class="footer-column flex-col">
+          <img src="./assets/branding/mosaic-logo.svg" alt="Logo" class="footer-logo" />
+        </div>
+        <div class="footer-column vert-pad-16 container-outline">
+          <ul class="flex-col pad-32">
+            <li>
+              <a href="index.html"> Home </a>
+            </li>
+            <li>
+              <a href="about-us.html"> About Us </a>
+            </li>
+            <li>
+              <a href="our-work.html"> Our Work </a>
+            </li>
+            <li>
+              <a href="our-services.html"> Our Services </a>
+            </li>
+          </ul>
+        </div>
+        <div id="contact-info" class="footer-column contact-info vert-pad-16 container-outline">
+          <ul class="flex-col pad-32">
+            <li>
+              <a id="email" href="mailto:manuel.mosaic@gmail.com">manuel.mosaic@gmail.com</a>
+            </li>
+            <li>
+              <a id="number" href="tel:604-575-1556">(604) 575-1556</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+</div>
   <script src="scripts/main.js" defer></script>
 </body>
 
